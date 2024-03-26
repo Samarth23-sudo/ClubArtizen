@@ -1,0 +1,132 @@
+body {
+  color: hsl(120, 2%, 9%);
+}
+
+.map-container {
+  width: 1200px; /* Set the width of the graph container */
+  height: 800px; /* Set the height of the graph container */
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 20px; /* Specified height */
+  background: #43da28; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border-radius: 5px;
+  background: crimson;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  border-radius: 5px;
+  background: crimson;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  /* padding: 5px; */
+  font-size: 21px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  opacity: 0; /* Initially hidden */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.country-and-year {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #cccccc;
+  min-width: 250px;
+}
+
+.country {
+  font-size: 25px;
+}
+
+.year {
+  font-size: 20px;
+}
+
+.country-and-year b {
+  font-size: 100;
+}
+
+.score-heading {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.score-value {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.score {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+#yearSlider {
+  -webkit-appearance: none; /* for chrome */
+  appearance: none;
+  margin-left: 40px;
+  width: 950px; /* Width of the slider */
+  height: 15px; /* Height of the slider */
+  background: #d3d3d3; /* Color of the background */
+  outline: none; /* Remove outline from the slider */
+  border-radius: 7px; /* Rounded corners */
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  fon
+
+  /* The slider track */
+  &::-webkit-slider-track {
+    -webkit-appearance: none; /* for chrome */
+    appearance: none;
+    height: 100%;
+    background: #cccccc; /* Color of the track */
+    border-radius: 7px; /* Rounded track corners */
+  }
+
+  /* The slider handle (thumb) */
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none; /* for chrome */
+    appearance: none;
+    width: 20px; /* Width of the thumb */
+    height: 20px; /* Height of the thumb */
+    background: #69b3a2; /* Color of the thumb */
+    border-radius: 50%; /* Round thumb corners */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+  }
+}
+
+
+#second-page{
+  border: 1px solid #ccc;
+}
