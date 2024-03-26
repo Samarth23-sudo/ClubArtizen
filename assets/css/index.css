@@ -57,6 +57,8 @@ body {
   border-radius: 15px;
   opacity: 0; /* Initially hidden */
   font-family: Arial, Helvetica, sans-serif;
+  pointer-events: none; /* Disable pointer events */
+  user-select: none; /* Disable text selection */
 }
 
 .country-and-year {
@@ -126,7 +128,14 @@ body {
   }
 }
 
-
-#second-page{
+#second-page {
   border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
 }
+
+#scatter {
+  padding-right: 50px;
+}
+
+
